@@ -14,7 +14,7 @@ pipeline {
         } 
         stage('Git Clone') {
             steps {
-                sh '''rm -rf jhei-bootcamp/'''
+                sh 'rm -rf jhei-bootcamp'
                 sh 'git clone https://github.com/jheisonV/jhei-bootcamp.git'
                 sh 'ls -lrt jhei-bootcamp/'
             }
